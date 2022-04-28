@@ -80,7 +80,7 @@ This ELK server is configured to monitor the following machines:
   
 Web-1 10.0.0.7
 
--_Web-2 10.0.0.8
+- _Web-2 10.0.0.8
 
 
 We have installed the following Beats on these machines:
