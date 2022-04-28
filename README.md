@@ -23,15 +23,15 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting access to the network.
 
-The aspect of security that load balancers is in the defense of organizations against DDos attacks. It does this by first analyzing the data traffic and then determines where to distribute that traffic accross a number of servers. The purpose is to balance the traffic and shift any malicious traffic the main server.
+- _The aspect of security that load balancers is in the defense of organizations against DDos attacks. It does this by first analyzing the data traffic and then determines where to distribute that traffic accross a number of servers. The purpose is to balance the traffic and shift any malicious traffic the main server.
 
-The advantage of a jump box is the ability to access and manage devices in a separate security zone.
+- _The advantage of a jump box is the ability to access and manage devices in a separate security zone.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration and system files.
 
-Filebeat is a lightweight that monitors log files or specified locations. These logged events are then collected and forwarded to either Elasticsearch or Logstash for indexing. 
+- _Filebeat is a lightweight that monitors log files or specified locations. These logged events are then collected and forwarded to either Elasticsearch or Logstash for indexing. 
 
-Metricbeat records the metrics and statistics that it collects and ships them to a specified output such as Elasticsearch or Logstash.
+- _Metricbeat records the metrics and statistics that it collects and ships them to a specified output such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 ]']'
