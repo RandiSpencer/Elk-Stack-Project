@@ -28,15 +28,16 @@ The aspect of security that load balancers is in the defense of organizations ag
 
 The advantage of a jump box is the ability to access and manage devices in a separate security zone.
 
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration and system files.
 
+- _TODO: What does Filebeat watch for?
 
+- Filebeat monitors log files or specified locations. These logged events are then collected and forwarded to either Elasticsearch or Logstash for indexing.
+ 
+- _TODO: What does Metricbeat record?
 
+Metricbeat records the metrics and statistics that it collects and ships them to a specified output such as Elasticsearch or Logstash.
 
-
-
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
