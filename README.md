@@ -22,7 +22,6 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 The aspect of security that load balancers is in the defense of organizations against DDos attacks. It does this by first analyzing the data traffic and then determines where to distribute that traffic accross a number of servers. The purpose is to balance the traffic and shift any malicious traffic the main server.
 
@@ -30,24 +29,19 @@ The advantage of a jump box is the ability to access and manage devices in a sep
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration and system files.
 
-- _TODO: What does Filebeat watch for?
-
-- Filebeat monitors log files or specified locations. These logged events are then collected and forwarded to either Elasticsearch or Logstash for indexing.
- 
-- _TODO: What does Metricbeat record?
+Filebeat is a lightweight that monitors log files or specified locations. These logged events are then collected and forwarded to either Elasticsearch or Logstash for indexing. 
 
 Metricbeat records the metrics and statistics that it collects and ships them to a specified output such as Elasticsearch or Logstash.
-
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.9   | Linux            |
+| Web - 1  | DVWA     | 10.0.0.7   | Linux            |
+| Web - 2  | DVWA     | 10.0.0.8   | Linux            |                  |
+| ELK      | ELK      | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
